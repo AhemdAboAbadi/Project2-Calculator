@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flix_main {
+  display: flex;
+  width: 380px;
+  height: 510px;
+  background-color: #cac5c5;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.val {
+  display: block;
+  margin: 25px;
+  width: 88%;
+  padding: 14px;
+  border-radius: 43px;
+  font-size: 21px;
+}
+
+div form input.numbers {
+  background-color: #eee;
+  color: black;
+  width: calc(96% / 4);
+  text-align: center;
+  padding: 11px;
+  border-radius: 32px;
+  font-size: 20px;
+  align-items: flex-start;
+}
+
+hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+div form input.dolar {
+  background-color: rgb(99, 0, 129);
+  color: white;
+  width: calc(96% / 2);
+  text-align: center;
+  padding: 11px;
+  border-radius: 32px;
+  font-size: 17px;
+}
