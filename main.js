@@ -26,6 +26,7 @@ for (i = 0; i < myBtn.length; i++) {
             break;
           }
         }
+
         const arrayOfNam = myValue.value.split(thisOp); // ["",""]
         let resultForTowNum = 0;
         if (thisOp === '+') {
@@ -37,7 +38,9 @@ for (i = 0; i < myBtn.length; i++) {
         } else if (thisOp === '/') {
           resultForTowNum = parseInt(arrayOfNam[0]) / parseInt(arrayOfNam[1]);
         }
-
+        if (this.value === '=') {
+          opCunt--;
+        }
         myValue.value = resultForTowNum;
         opCunt--;
       }
@@ -53,7 +56,6 @@ for (i = 0; i < myBtn.length; i++) {
 del.onclick = () => {
   myValue.value = myValue.value.substring(0, myValue.value.length - 1);
 };
-
 
 shekelToDolar.onclick = () => {
   myValue.value = parseFloat(myValue.value) / 3.3;
