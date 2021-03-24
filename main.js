@@ -30,13 +30,13 @@ for (i = 0; i < myBtn.length; i++) {
         const arrayOfNam = myValue.value.split(thisOp); // ["",""]
         let resultForTowNum = 0;
         if (thisOp === '+') {
-          resultForTowNum = parseInt(arrayOfNam[0]) + parseInt(arrayOfNam[1]);
+          resultForTowNum = parseFloat(arrayOfNam[0]) + parseFloat(arrayOfNam[1]);
         } else if (thisOp === '-') {
-          resultForTowNum = parseInt(arrayOfNam[0]) - parseInt(arrayOfNam[1]);
+          resultForTowNum = parseFloat(arrayOfNam[0]) - parseFloat(arrayOfNam[1]);
         } else if (thisOp === 'x') {
-          resultForTowNum = parseInt(arrayOfNam[0]) * parseInt(arrayOfNam[1]);
+          resultForTowNum = parseFloat(arrayOfNam[0]) * parseFloat(arrayOfNam[1]);
         } else if (thisOp === '/') {
-          resultForTowNum = parseInt(arrayOfNam[0]) / parseInt(arrayOfNam[1]);
+          resultForTowNum = parseFloat(arrayOfNam[0]) / parseFloat(arrayOfNam[1]);
         }
         if (this.value === '=') {
           opCunt--;
@@ -46,7 +46,7 @@ for (i = 0; i < myBtn.length; i++) {
       }
     }
 
-    if (this.value !== '=') {
+    if (this.value !== '=') {  
       // result without equal
       myValue.value += this.value;
     }
@@ -54,6 +54,8 @@ for (i = 0; i < myBtn.length; i++) {
 }
 
 del.onclick = () => {
+  substr()
+  substring()
   myValue.value = myValue.value.substring(0, myValue.value.length - 1);
 };
 
