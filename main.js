@@ -54,8 +54,6 @@ for (i = 0; i < myBtn.length; i++) {
 }
 
 del.onclick = () => {
-  substr()
-  substring()
   myValue.value = myValue.value.substring(0, myValue.value.length - 1);
 };
 
